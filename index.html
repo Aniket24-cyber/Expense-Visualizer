@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./perfect-scrollbar-1.4.0/dist/perfect-scrollbar.js"></script>
+    <link rel="stylesheet" href="./perfect-scrollbar-1.4.0/css/perfect-scrollbar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-inputs">
+            <div class="expenses">
+                <span class="heading">Expenses</span>
+                <div class="date">
+                    <input class="date-selector" type="date" data-date-inline-picker="true" />
+                </div>
+                <div class="expenses-list">
+                    <div class="expense-selector">
+                        <select id="selected-expense">
+                            <option value="travel">Travel</option>
+                            <option value="grocery">Grocery</option>
+                            <option value="health">Health</option>
+                            <option value="taxes">Taxes</option>
+                            <option value="bills">Bills</option>
+                            <option value="insurance">Insurances</option>
+                            <option value="rents">Rents</option>
+                            <option value="stationary">Stationary</option>
+                            
+                        </select>
+                        <button class="add material-icons">add</button>
+                    </div>
+                    <div class="expense-category">
+
+                    </div>
+                    <!-- <div class="expense">
+                         <div class="expense-name">expense-name</div>
+                        <input type="text" placeholder="Rs.Amount"  class="expense-amount">
+                    </div> 
+                    <div class="expense">
+                        <div class="expense-name">expense-name</div>
+                        <input type="text" placeholder="Rs.Amount" class="expense-amount">
+                    </div> 
+                    <div class="expense">
+                        <div class="expense-name">expense-name</div>
+                        <input type="text" placeholder="Rs.Amount"  class="expense-amount">
+                    </div>--> 
+                    <div class="amount">
+                        <span class="span-amount">Total Amount:</span>
+                        <span class="total-amount">Rs. 0</span>
+                    </div>
+                    <div class="total-amount-div">   
+                    </div>
+                    <div class="submit-buttons">
+                        <button class="submit-expense">Total</button>
+                        <button class="submission">Submit</button>
+                        <button class="reset-expense">Reset</button>
+                    </div>   
+                </div>  
+            </div>
+            
+        </div>
+        <div class="main-charts">
+            <div class="nav">
+                <input type="month" id="month" name="bdaymonth">
+                <button class="submit-month">See This Month</button>
+                <button class="btn">Last.Added-Month</button>
+                <button class="savings">Income Vs Expense</button>
+                <button class="deleteExpense">Delete a date</button>
+
+                
+                <!-- <input type="number" placeholder="Rs." value = "0">
+                <button class = "setIncomeBtn">submit</button> -->
+            </div>
+            <div class="stats">
+                <div class="input-stats"></div>
+            </div>
+            
+            <select id="selected-graphType">
+                <option value="line">Line</option>
+                <option value="bar">Bar</option>
+                <option value="radar">Radar</option>
+                </select>
+                
+               
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+   overflow: hidden;
+ }
+ 
+ * {
+   box-sizing: border-box;
+ }
+ .main-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+ }
+.main-inputs{
+    height: 100%;
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+} 
+.main-charts{
+    height: 100%;
+    width: 60%;
+    overflow: scroll;
+    background-color: aqua;
+}
+.expenses{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: space-evenly;
+}
+.heading{
+    font-size: 2rem;
+    
+}
+.date{
+    width: 50%;
+}
+.date-selector{
+    width: 100%;
+    
+}
+.expenses-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:80%;
+    width: 60%;
+    
+}
+.expense-category{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 10px;
+    
+    overflow: scroll;
+}
+  
+
+.expense-selector{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#selected-expense{
+    margin-top: 5px;
+    width: 75% ;
+    height: 100%;
+}
+.add{  
+border-radius: 40px;
+    width: 40%;
+    border: azure;
+}
+.add:hover{
+    background-color:rgb(54, 162, 235) ;
+}
+.expense{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3px;
+    height: 5vh;
+}
+.expense-name{
+    width: 60%;
+    
+    padding: 10px;
+    background-color: lightgrey;
+   text-align: center;
+}
+.expense-amount{
+    width: 27%;
+
+}
+.total-amount-div{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.amount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.span-amount{
+    width: 70%;
+}
+.total-amount{
+    width: 21%;
+}
+
+.submit-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit-expense,.submission,.reset-expense{
+    width: 30%;
+    border-radius: 5px;;
+    border: white;
+    font-size: 0.9rem;
+    padding: 10px;;
+}
+.submit-expense:hover{
+    background-color: rgb(255, 99, 132);
+}
+.submission:hover{
+    background-color: rgb(255, 99, 132);
+}
+.reset-expense:hover{
+    background-color: rgb(255, 99, 132);
+}
+.nav{
+    width: 100%;
+    height: 5%;
+    background-color: azure;
+    padding: 5px;;
+}
+#selected-graphType{
+    width: 15%;
+}
+
+.total-amount-month{
+    display: block;
+   
+    margin-bottom: 1rem;
+    color: rgb(255, 99, 132);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.total-income-month,.total-monthlyIncome{
+    display: block;
+    
+    margin-bottom: 1rem;
+    color: rgb(54, 162, 235);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.total-monthlyIncome{
+    margin-left: 0 ;
+    font-weight: 700;
+
+}
+
+.total-saving-month,.total-monthlySaving{
+    display: block;
+    
+    margin-bottom: 1rem;
+    color:rgb(50, 25, 158);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.total-monthlySaving{
+    margin-left: 20px;
+    font-weight: 700;
+}
+.savings-stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.savings{
+    margin-left: 20px;;
+}
+.btn{
+    margin-left: 10px;
+}
+.stats{
+    background-color: aquamarine;
+}
+.monthly-savings-stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-stats{
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    background-color: white;
+    height: 15%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#year,.enteredIncome{
+    width: 30%;
+}
+#myChart2{
+    padding: 3%;
+}
+.date-selector-deletion{
+    width: 30%;
+}
+.deleteExpense{
+    margin-left: 10px;
+    
+}
+.submit-month,.btn,.savings,.deleteExpense{
+    border-radius: 10px;
+    border: azure;
+    font-size: 0.9rem;
+}
+.submit-month:hover{
+    background-color: rgb(255, 99, 132)
+}
+.btn:hover{
+    background-color: rgb(255, 99, 132)
+}
+.savings:hover{
+    background-color: rgb(255, 99, 132)
+}
+.deleteExpense:hover{
+    background-color: rgb(255, 99, 132)
+}
+.setIncome-Btn,.deleteButton{
+    width: 70%;
+    align-items: center;
+    border-radius: 5px;
+    border: azure;
+    height: 5vh;
+    margin-top: 5px;;
+}
+.setIncome-Btn:hover{
+   
+    background-color: rgb(54, 162, 235)
+}
+.deleteButton:hover{
+    
+    background-color: rgb(54, 162, 235)
+}
