@@ -5,4 +5,6 @@ How the Application works :
 3.We can check out any data(chart) of any day or month.
 4.We can track all our Income vs Expense data of any month or year.
 5.Multiple charts support (Bar,Line,Radar).
+
+I have used Html , Css , JavaScript , chart.js in this Project..
 Visualizer that makes us understand our expenses very well....
